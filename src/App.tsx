@@ -1,19 +1,18 @@
-import { Home } from "./pages/Home"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { NotFound } from "./pages/NotFound"
 
-function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />}/>
-          <Route path="*" element={<NotFound />}/>
+import Card from './Card/Card';
+import Message from './Message'
 
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
-}
+function App(){
+    return(
+        <>
+            <div>
+                <Message />
+                <Card title = "Java" text = "Proficient in Java" src = "java.png"/>
+                <Card title = "Python" text = "Proficient in Python" src = "python.png"/>
+                <Card title = "TypeScript" text = "Proficient in TypeScript" src = "ts.png"/>
+            </div>
+        </>
+    );
+};
 
-export default App
+export default App;

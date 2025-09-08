@@ -1,0 +1,37 @@
+.card{
+  border: 1px solid rgba(168, 167, 167, 0.224);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 1%, 66%, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  display: inline-block;
+}
+
+.cardImage{
+  height: 50px;
+  width: 50px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid rgba(168, 167, 167, 0.224);
+  border-radius: 10px;
+}
+
+.cardTitle{
+  padding: 0px;
+  margin-bottom: 25px;
+  padding: 5px;
+  
+}
+
+.cardText{
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.containerFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
