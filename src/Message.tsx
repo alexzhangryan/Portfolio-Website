@@ -7,17 +7,17 @@ const Message = () => {
         <>  
             <Typewriter />
             <p className="text-center w-1/2 m-auto">Currently a student at The Univeristy of Wisconsin - Madison pursuing majors in Computer Science and Economics with a Mathematical Emphasis. I have experience in languages such as Python, Java, TypeScript, and SQL as well as libraries such as React, Pytorch, and SQLAlchemy.</p>
-            <div className="grid grid-cols-4 justify-center my-5 max-w-1/8 mx-auto">
+            <div className="grid grid-cols-4 gap-4 justify-center my-5 max-w-1/6 mx-auto">
                 <a href="https://github.com/alexzhangryan"><img className = "linkImage" src="./src/assets/github.png"></img></a>
                 <a href="https://www.linkedin.com/in/alex-ryan-807b22293/"><img className = "linkImage" src="./src/assets/linkedin.png"></img></a>
                 <a href="mailto:alexzhangryan@gmail.com"><img className = "linkImage" src="./src/assets/gmail.jpg"></img></a>
                 <a href="https://leetcode.com/u/genjigod/"><img className = "linkImage" src="./src/assets/leetcode.png"></img></a>
             </div>
             <div className="flex justify-center mt-20">
-                <NavLink to="/projects" className="justify-center p-4 rounded-full bg-accent text-background hover:scale-110">Check Out My Work!</NavLink>
+                <NavLink to="/projects" className="justify-center p-4 rounded-full bg-accent text-background hover:scale-110 transition-all duration-300">Check Out My Work!</NavLink>
             </div> 
             <div className="grid grid-cols-2 max-w-6xl mx-auto mt-25 mb-25">
-                <div className="flex mx-auto flex flex-col">
+                <div className="flex mx-auto flex-col">
                     <h1 className="text-left text-[48px] font-bold my-5">My <span className="text-accent">Journey</span></h1>
                     <p>I'm currently a junior at The University of Wisconsin - Madison with an expected graduation date of 2027. During my studies I've taken an interest to AI/ML and have been working on my own project such as building a neural network from scratch or working with Pytorch to create image classifiers. <br /><br />
                     Outside of class, I am a member of the UW Taekwondo club, where I was treasurer last year. During my time as treasurer I also got the opprotunity to participate in the National Collegiate Taekwondo Championship in Berkeley. I also enjoy playing games with friends, kpop, and fashion. <br /><br />
@@ -29,7 +29,7 @@ const Message = () => {
                     <img className="border-4 border-accent rounded-lg"src="./src/assets/selfie2.jpg"></img>
                 </div>
             </div>
-            <Footer />
+            <Footer isBottom={false}/>
         </>
     );
 };
