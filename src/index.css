@@ -1,5 +1,23 @@
+@import "tailwindcss";
+
+@theme{
+  --color-border: hsl(257, 11%, 12%);
+  --color-background: hsl(257, 11%, 12%);
+  --color-primary: hsl(43, 42%, 87%);
+  --color-accent: hsl(48, 100%, 50%);
+}
+
 body{
   background: hsl(257, 11%, 12%);
-  color: hsl(0, 0%, 100%);
+  color: hsl(43, 42%, 87%);
   font-family: Arial, sans-serif;
+}
+
+@layer components{
+  .navLink{
+    @apply flex items-center h-16 px-4 hover:bg-accent hover:text-background;
+  }
+  .active{
+    @apply flex items-center h-16 px-4 bg-accent text-background
+  }
 }
