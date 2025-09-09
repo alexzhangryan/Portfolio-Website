@@ -3,21 +3,36 @@
 @theme{
   --color-border: hsl(257, 11%, 12%);
   --color-background: hsl(257, 11%, 12%);
-  --color-primary: hsl(43, 42%, 87%);
+  --color-primary: hsl(0, 0%, 100%);
   --color-accent: hsl(48, 100%, 50%);
 }
 
 body{
-  background: hsl(257, 11%, 12%);
-  color: hsl(43, 42%, 87%);
-  font-family: Arial, sans-serif;
+  background: hsl(257, 17%, 8%);
+  color: hsl(0, 0%, 100%);
+  @apply font-mono;
+}
+
+@layer base{
+  h1{
+    @apply text-primary
+  }
+  p{
+    @apply text-[20px]
+  }
 }
 
 @layer components{
   .navLink{
-    @apply flex items-center h-16 px-4 hover:bg-accent hover:text-background;
+    @apply flex items-center h-16 px-8 hover:bg-accent hover:text-background;
   }
   .active{
-    @apply flex items-center h-16 px-4 bg-accent text-background
+    @apply flex items-center h-16 px-8 bg-accent text-background;
+  }
+  .linkImage{
+    @apply flex items-center mx-2 h-10 w-10 bg-primary p-1 rounded-full;
+  }
+  .footer{
+    @apply flex items-center h-20 w-1/1 bg-[#0C0B12];
   }
 }

@@ -9,6 +9,7 @@ import{
 import NotFoundPage from './NotFound.tsx';
 import Projects from './Projects.tsx';
 import Skills from './Skills.tsx'
+import Experience from './Experience.tsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: '/skills',
     element: <Skills />,
+    errorElement: <NotFoundPage />
+  },
+  {
+    path: '/experience',
+    element: <Experience />,
     errorElement: <NotFoundPage />
   }
 ]);
