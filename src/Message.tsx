@@ -7,7 +7,7 @@ const Message = () => {
         <>  
             <Typewriter />
             <p className="text-center w-1/2 m-auto">Currently a student at The Univeristy of Wisconsin - Madison pursuing majors in Computer Science and Economics with a Mathematical Emphasis. I have experience in languages such as Python, Java, TypeScript, and SQL as well as libraries such as React, Pytorch, and SQLAlchemy.</p>
-            <div className="grid grid-cols-4 gap-4 justify-center my-5 max-w-1/6 mx-auto">
+            <div className="grid grid-cols-4 gap-4 justify-center my-5 w-75 mx-auto">
                 <a href="https://github.com/alexzhangryan"><img className = "linkImage" src="./src/assets/github.png"></img></a>
                 <a href="https://www.linkedin.com/in/alex-ryan-807b22293/"><img className = "linkImage" src="./src/assets/linkedin.png"></img></a>
                 <a href="mailto:alexzhangryan@gmail.com"><img className = "linkImage" src="./src/assets/gmail.jpg"></img></a>
