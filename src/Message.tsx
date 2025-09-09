@@ -12,7 +12,7 @@ const Message = () => {
                     <a href="https://leetcode.com/u/genjigod/"><img className = "linkImage" src="./src/assets/leetcode.png"></img></a>
                 </ul>
             </div>
-            <p>todo: add view my work button and fix footer</p>
+            <p>todo: add view my work button and fix footer (USE GRID)</p>
             <div className="grid grid-cols-2 max-w-6xl mx-auto mt-50 mb-25">
                 <div className="flex mx-auto flex flex-col">
                     <h1 className="text-left text-[48px] font-bold my-5">My <span className="text-accent">Journey</span></h1>
