@@ -4,10 +4,6 @@ import NavBar from "./NavBar";
 export const Experience = () => {
     return(
         <>  
-            <meta name="author" content="Alex Ryan"/>
-            <meta name="keywords" content="React, TypeScript, TailwindCSS, html" />
-            <title>Alex Ryan Portfolio</title>
-            <link rel="icon" type="image/x-icon" href="./src/assets/favicon.ico"></link>
             <div>
                 <NavBar />
                 <h1 className="title">Work <span className="text-accent">Experience</span></h1>
