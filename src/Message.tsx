@@ -16,8 +16,8 @@ const Message = () => {
             <div className="flex justify-center mt-20">
                 <NavLink to="/projects" className="justify-center p-4 rounded-full bg-accent text-background hover:scale-110 transition-all duration-300">Check Out My Work!</NavLink>
             </div> 
-            <div className="grid grid-cols-2 max-w-6xl mx-auto mt-25 mb-25">
-                <div className="flex mx-auto flex-col">
+            <div className="flex flex-cols-2 max-w-7xl mx-auto mt-25 mb-25">
+                <div className="flex mx-5 flex-col">
                     <h1 className="text-left text-[48px] font-bold my-5">My <span className="text-accent">Journey</span></h1>
                     <p>I'm currently a junior at The University of Wisconsin - Madison with an expected graduation date of 2027. During my studies I've taken an interest to AI/ML and have been working on my own project such as building a neural network from scratch or working with Pytorch to create image classifiers. <br /><br />
                     Outside of class, I am a member of the UW Taekwondo club, where I was treasurer last year. During my time as treasurer I also got the opprotunity to participate in the National Collegiate Taekwondo Championship in Berkeley. I also enjoy playing games with friends, kpop, and fashion. <br /><br />
@@ -26,7 +26,7 @@ const Message = () => {
                     </p>
                 </div>
                 <div className="mx-15 flex items-center pt-15">
-                    <img className="border-4 border-accent rounded-lg"src="./src/assets/selfie2.jpg"></img>
+                    <img className="border-4 border-accent rounded-lg hidden lg:block"src="./src/assets/selfie4.jpg" loading="eager"></img>
                 </div>
             </div>
             <Footer isBottom={false}/>

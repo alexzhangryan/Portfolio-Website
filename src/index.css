@@ -7,6 +7,8 @@
   --color-accent: hsl(48, 100%, 50%);
   --animate-typing: typing 2s steps(20) forwards, blink 1s step-end infinite, deleting 0.5s steps(3) forwards 3s, retyping 0.5s steps(3) forwards 3.5s;
   --animate-fadeIn: fadeIn 1s 0ms forwards;
+  --animate-fadeInRight: fadeInRight 1s 0ms forwards;
+  --animate-fillUp: fillUp 3s 0ms forwards;
   
   @keyframes blink{
     50%{
@@ -39,13 +41,31 @@
     }
   }
   @keyframes fadeIn{
+    from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  }
+  @keyframes fadeInRight{
+    from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+    to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  }
+  @keyframes fillUp{
     from{
-      transform: translateY(30px);
-      opacity: 0; 
+      width: 0;
     }
     to{
-      transform: translateY(0px);
-      opacity: 1;
+      width: 100%;
     }
   }
 }
@@ -82,14 +102,35 @@ body{
     @apply text-[48px] box-content font-bold font-mono overflow-hidden whitespace-nowrap border-r-[5px] animate-typing;
   }
   .projectCard{
-    @apply shadow-lg shadow-[#2B2736] bg-[#211e29] grid grid-cols-4 mx-auto my-15 w-225 h-50 rounded-4xl items-center opacity-0 animate-fadeIn hover:scale-105 hover:shadow-accent transition-all duration-400;
+    @apply shadow-lg shadow-[#2B2736] bg-[#211e29] grid grid-cols-4 mx-auto my-15 w-225 h-50 rounded-4xl items-center opacity-0 animate-fadeIn hover:scale-105 hover:shadow-accent transition-all duration-400 z-0;
   }
   .skillBubble{
     @apply mx-3 mt-4 px-4 border-white border-[1px] box-content rounded-4xl;
   }
+  .contactBox{
+    @apply fixed bottom-1/2 right-1/2 translate-1/2 w-1/4 h-auto bg-background rounded-4xl z-20
+  } 
+  .nameBox{
+    @apply bg-[#413c38] p-3 rounded-xl w-49/100 mt-5
+  }
 
-  @layer utility{
+  .emailBox{
+    @apply bg-[#413c38] p-3 rounded-xl w-full my-5
+  }
 
+  .messageBox{
+    @apply bg-[#413c38] p-3 rounded-xl w-full h-25
+  }
+
+  .title{
+    @apply text-[48px] font-bold font-mono text-center my-25
+  }
+
+  .workTitle{
+    @apply flex justify-between text-[36px] border-b-2 border-white
+  }
+  .skillCard{
+    @apply shadow-lg shadow-[#2B2736] bg-[#211e29] w-100 h-50 rounded-4xl hover:scale-105 hover:shadow-accent transition-all duration-400 z-0
   }
 
 }
